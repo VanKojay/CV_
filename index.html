@@ -45,7 +45,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">ProMan</h1>
+            <h1 class="text-primary fw-bold m-0">LaniKuhhh</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -58,7 +58,7 @@
                 <a href="#service" class="nav-item nav-link">Services</a>
             </div>
             <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
-                <h1 class="text-primary fw-bold m-0">ProMan</h1>
+                <h1 class="text-primary fw-bold m-0">LaniKuhhh</h1>
             </a>
             <div class="navbar-nav me-auto py-0">
                 <a href="#project" class="nav-item nav-link">Projects</a>
@@ -131,12 +131,30 @@
                         </div>
                         <h3 class="lh-base mb-0">telah menjadi perempuan yang salihah dan baik</h3>
                     </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <p class="mb-4">Di matamu, terbitlah senja,
+                        Cintamu, nyanyian terindah.
+                        Ketika kau tersenyum, bunga-bunga mekar,
+                        Dalam pelukanmu, dunia terasa sempurna.
+                        Kau adalah cinta sejati yang abadi,
+                        Hidupku hanya indah bersamamu, selamanya.</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Baik Hatinya</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Cantik Parasnya</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Senyumnya yang bikin candu</p>
-                    <a class="btn btn-danger py-3 px-5 mt-3" href="">Love Klik ++</a>
+                    <a class="btn btn-danger py-3 px-5 mt-3" id="loveButton" href="">Klik Aku ♥</a>
+                    <a class="btn btn-danger py-3 px-5 mt-3" id="loveText" href=""></a>
                 </div>
+
+                <script>
+                    const loveButton = document.getElementById('loveButton');
+                    const loveText = document.getElementById('loveText');
+                    let hitungan = 0;
+
+                    loveButton.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        hitungan++;
+                        loveText.innerText = `Lani Cantik ${hitungan}x`;
+                    });
+                </script>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
@@ -235,10 +253,10 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Achievment</button>
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Penghargaan</button>
                         </li>
                         <li class="nav-item w-50">
-                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Pernah Belajar</button>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -251,10 +269,10 @@
                                     <h6 class="mb-0">Audisi Bogor Hujan </h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Lomba Makan Seblak Internasional</h5>
+                                    <h5>Lomba Makan Seblak ASIA</h5>
                                     <hr class="text-primary my-2">
                                     <p class="text-primary mb-1">2023</p>
-                                    <h6 class="mb-0">Singapore Seblak Eating Contest</h6>
+                                    <h6 class="mb-0">ASIA Seblak Eating Contest</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Lomba Boros Se-Kecamatan</h5>
@@ -372,7 +390,7 @@
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
+                    <h1 class="display-5 mb-0">Gallery Lani</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
                     <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
@@ -651,13 +669,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom text-secondary" href="https://www.instagram.com/vankojay/">VanKojay</a>, All Right Reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <!-- <div class="col-md-6 text-center text-md-end">
+                        
                         Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
                         <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
